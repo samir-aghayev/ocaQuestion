@@ -1,4 +1,4 @@
-package hashmaptasks.task;
+package task;
 
 import java.util.Scanner;
 

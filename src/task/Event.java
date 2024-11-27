@@ -1,4 +1,4 @@
-package hashmaptasks.task;
+package task;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -53,6 +53,4 @@ public class Event implements Comparable<Event> {
     public String toString() {
         return "Event{id=%d, title='%s', description='%s',  time=%s}".formatted(id, title, description, time);
     }
-
-
 }
