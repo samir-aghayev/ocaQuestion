@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class EventTest {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        while (true) {
+        boolean isRunning=true;
+        while (isRunning) {
             EventScheduler.displayMenu();
             int choice = scanner.nextInt();
             switch (choice) {
@@ -13,10 +14,9 @@ public class EventTest {
                 case 2 -> EventScheduler.listUpComingEvents();
                 case 3 -> EventScheduler.removeEvent();
                 case 4 -> EventScheduler.findElementsByDate();
-                case 5 -> {
-                    return;
-                }
+                case 5 -> isRunning=false;
             }
         }
+        scanner.close();
     }
 }
