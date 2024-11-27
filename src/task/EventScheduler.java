@@ -11,7 +11,7 @@ public class EventScheduler {
     private static final Scanner SCANNER = new Scanner(System.in);
     private static int eventIdCounter = 1;
 
-    public EventScheduler() {
+    private EventScheduler() {
     }
 
     public static void displayMenu() {
